@@ -1,0 +1,12 @@
+..................................................................       [100%]
+=============================== warnings summary ===============================
+build_runtime/fastapi/testclient.py:1
+  /workspace/scratch/cce670d34d62/build_runtime/fastapi/testclient.py:1: StarletteDeprecationWarning: Using `httpx` with `starlette.testclient` is deprecated; install `httpx2` instead.
+    from starlette.testclient import TestClient as TestClient  # noqa
+
+AgriVision_AI_DETECTION_FINAL_2026/tests/test_integration.py::test_pdf_and_text_previews
+  /workspace/scratch/cce670d34d62/build_runtime/fitz/__init__.py:17: FutureWarning: The `fitz` API is deprecated and will be removed in future. Use `import pymupdf` instead.
+    warnings.warn(
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+66 passed, 2 warnings in 3.69s

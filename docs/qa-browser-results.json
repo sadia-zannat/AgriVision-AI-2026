@@ -1,0 +1,66 @@
+{
+  "executed_utc": "2026-11-13T21:35:04.844862+00:00",
+  "environment": "Linux Chromium + real detector/classifier CPU YOLO; camera tracks MOCKED",
+  "screenshots": "Real running application; leaf asset from supplied K-State L721 figure 2, not live field evidence",
+  "checks": [
+    {
+      "check": "Real server starts, two-stage profile loads and dashboard renders at 1366\u00d7768",
+      "passed": true
+    },
+    {
+      "check": "Real YOLO detector box + preserved classifier \u2192 capture \u2192 Bengali offline guide, annotated chat image and sources",
+      "passed": true
+    },
+    {
+      "check": "Offline follow-up reuses explicitly submitted evidence and answers causes",
+      "passed": true
+    },
+    {
+      "check": "Image-less greeting does not reuse a previous event",
+      "passed": true
+    },
+    {
+      "check": "Attachment preview, failed-send retention and successful image transmission/display",
+      "passed": true
+    },
+    {
+      "check": "Responsive 1366 / 1920 / 390px layouts, visible desktop send button and scrollable message region",
+      "passed": true
+    },
+    {
+      "check": "Opening a new photo clears old saved-event attachment and old boxes",
+      "passed": true
+    },
+    {
+      "check": "Geolocation failure clears simulation and displays actual UNAVAILABLE state",
+      "passed": true
+    },
+    {
+      "check": "Mock permission probe releases default; exact USB selection; stable live inference clears old label on a dark frame",
+      "passed": true
+    },
+    {
+      "check": "Chat photo during live camera succeeds locally; live inference resumes after answering",
+      "passed": true
+    },
+    {
+      "check": "Real MediaRecorder on mocked video track \u2192 validated WebM storage \u2192 playback/download route",
+      "passed": true
+    },
+    {
+      "check": "Pause/resume, Stop track cleanup, second-device switch and restart",
+      "passed": true
+    },
+    {
+      "check": "Recorded-video playback/capture retains honest recorded origin",
+      "passed": true
+    },
+    {
+      "check": "No uncaught browser JavaScript errors",
+      "passed": true
+    }
+  ],
+  "physical_usb_tested": false,
+  "cuda_tested": false,
+  "cloud_provider_credentials_tested": false
+}

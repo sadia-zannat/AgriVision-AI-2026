@@ -1,0 +1,6 @@
+Python: 3.12.14
+PyTorch: 2.15.0+cpu
+CUDA available: False
+Model: {'ready': True, 'selected': 'hybrid', 'model': {'id': 'hybrid', 'filename': 'tomato_detector_9class.pt', 'sha256': 'ccc05ab88bb550567fb7a7a07c564d37e344e7e69e094da54481ea47c0f134b3', 'classes': ['Bacterial Spot', 'Early Blight', 'Healthy', 'Late Blight', 'Yellow Leaf Curl Virus'], 'raw_classes': ['Tomato Early blight leaf', 'Tomato Septoria leaf spot', 'Tomato leaf', 'Tomato leaf bacterial spot', 'Tomato leaf late blight', 'Tomato leaf mosaic virus', 'Tomato leaf yellow virus', 'Tomato mold leaf', 'Tomato two spotted spider mites leaf'], 'task': 'two-stage', 'device': 'cpu', 'input_size': 640, 'provenance': 'Actual 9-class YOLO detector boxes + preserved user 5-class YOLO classifier; experimental two-stage profile', 'classifier_sha256': 'd3e816f6d02cd74f3d4b0fd6d756b8bcd93a7efefd9c41920f30a02af3bf3007', 'classifier_file': 'tomato_best.pt'}, 'error': None, 'available': ['hybrid', 'detector9', 'original'], 'threshold': 0.4, 'limitations': 'Predicted tomato leaf-condition boxes, not lesion segmentation or confirmed diagnosis. Nutrient deficiency is not visually trained.'}
+Original SHA256: d3e816f6d02cd74f3d4b0fd6d756b8bcd93a7efefd9c41920f30a02af3bf3007
+No camera is opened by this check. Use the browser device selector for physical verification.

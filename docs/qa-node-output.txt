@@ -1,0 +1,13 @@
+✔ three-frame stabilization immediately clears an old label on a dark frame (1.758616ms)
+✔ permission probe releases tracks and exact selected device is requested (0.982443ms)
+✔ device mismatch fails and releases the incorrect stream (1.319318ms)
+✔ permission and occupied-device errors are actionable (0.338478ms)
+✔ review-required predictions stabilize without being treated as confirmed diagnoses (0.176192ms)
+ℹ tests 5
+ℹ suites 0
+ℹ pass 5
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 220.634608

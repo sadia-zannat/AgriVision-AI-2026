@@ -1,0 +1,14 @@
+.env
+.venv/
+venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+artifacts/
+datasets/
+runs/
+node_modules/
+*.log
+models/tomato_10class_best.pt
+models/tomato_10class_provenance.json
+qa-temp/

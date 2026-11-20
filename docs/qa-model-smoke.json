@@ -1,0 +1,514 @@
+{
+  "profile": "hybrid",
+  "classification_accuracy_evaluated": false,
+  "cases": [
+    {
+      "input": "QA_SCREENSHOT_DERIVED_mixed_UNKNOWN_DIAGNOSIS.jpg",
+      "ground_truth": "UNKNOWN; screenshot-derived, not a labeled validation example",
+      "prediction": {
+        "status": "NO_DETECTION",
+        "label": null,
+        "score": null,
+        "quality": {
+          "brightness": 123.5,
+          "contrast": 30.0,
+          "sharpness": 647.6,
+          "foliage_fraction": 0.627,
+          "glare_fraction": 0.0,
+          "method": "unvalidated quality heuristic; not a leaf detector"
+        },
+        "reason": "No supported tomato condition detected above threshold. Try a closer, well-lit single leaf; absence of boxes does not mean healthy.",
+        "model": {
+          "id": "hybrid",
+          "filename": "tomato_detector_9class.pt",
+          "sha256": "ccc05ab88bb550567fb7a7a07c564d37e344e7e69e094da54481ea47c0f134b3",
+          "classes": [
+            "Bacterial Spot",
+            "Early Blight",
+            "Healthy",
+            "Late Blight",
+            "Yellow Leaf Curl Virus"
+          ],
+          "raw_classes": [
+            "Tomato Early blight leaf",
+            "Tomato Septoria leaf spot",
+            "Tomato leaf",
+            "Tomato leaf bacterial spot",
+            "Tomato leaf late blight",
+            "Tomato leaf mosaic virus",
+            "Tomato leaf yellow virus",
+            "Tomato mold leaf",
+            "Tomato two spotted spider mites leaf"
+          ],
+          "task": "two-stage",
+          "device": "cpu",
+          "input_size": 640,
+          "provenance": "Actual 9-class YOLO detector boxes + preserved user 5-class YOLO classifier; experimental two-stage profile",
+          "classifier_sha256": "d3e816f6d02cd74f3d4b0fd6d756b8bcd93a7efefd9c41920f30a02af3bf3007",
+          "classifier_file": "tomato_best.pt"
+        },
+        "top_classes": [],
+        "detections": [],
+        "image_size": {
+          "width": 206,
+          "height": 276
+        },
+        "method": "two-stage",
+        "warning": "Possible leaf condition. Model score is not diagnostic probability or disease severity.",
+        "latency_ms": 1109.7
+      }
+    },
+    {
+      "input": "QA_TEST_KSTATE_EARLY_BLIGHT_NOT_LIVE.jpg",
+      "ground_truth": "Early Blight (K-State figure 2)",
+      "prediction": {
+        "status": "REVIEW",
+        "label": "Early Blight",
+        "score": 0.95424,
+        "quality": {
+          "brightness": 146.1,
+          "contrast": 45.8,
+          "sharpness": 150.3,
+          "foliage_fraction": 0.919,
+          "glare_fraction": 0.022,
+          "method": "unvalidated quality heuristic; not a leaf detector"
+        },
+        "reason": "1 YOLO region(s). Models disagree; compare symptoms before accepting the class.",
+        "model": {
+          "id": "hybrid",
+          "filename": "tomato_detector_9class.pt",
+          "sha256": "ccc05ab88bb550567fb7a7a07c564d37e344e7e69e094da54481ea47c0f134b3",
+          "classes": [
+            "Bacterial Spot",
+            "Early Blight",
+            "Healthy",
+            "Late Blight",
+            "Yellow Leaf Curl Virus"
+          ],
+          "raw_classes": [
+            "Tomato Early blight leaf",
+            "Tomato Septoria leaf spot",
+            "Tomato leaf",
+            "Tomato leaf bacterial spot",
+            "Tomato leaf late blight",
+            "Tomato leaf mosaic virus",
+            "Tomato leaf yellow virus",
+            "Tomato mold leaf",
+            "Tomato two spotted spider mites leaf"
+          ],
+          "task": "two-stage",
+          "device": "cpu",
+          "input_size": 640,
+          "provenance": "Actual 9-class YOLO detector boxes + preserved user 5-class YOLO classifier; experimental two-stage profile",
+          "classifier_sha256": "d3e816f6d02cd74f3d4b0fd6d756b8bcd93a7efefd9c41920f30a02af3bf3007",
+          "classifier_file": "tomato_best.pt"
+        },
+        "top_classes": [
+          {
+            "label": "Early Blight",
+            "score": 0.95424
+          }
+        ],
+        "detections": [
+          {
+            "id": 1,
+            "class_id": 6,
+            "label": "Early Blight",
+            "raw_label": "Tomato leaf yellow virus",
+            "score": 0.95424,
+            "localization_score": 0.91113,
+            "detector_label": "Tomato Yellow Virus",
+            "classifier_top_classes": [
+              {
+                "label": "Early Blight",
+                "score": 0.95424
+              },
+              {
+                "label": "Late Blight",
+                "score": 0.04562
+              },
+              {
+                "label": "Bacterial Spot",
+                "score": 0.00014
+              }
+            ],
+            "classification_input": "full frame (proposal covers >=80%)",
+            "review_required": true,
+            "models_disagree": true,
+            "box": [
+              0.052833,
+              0.011179,
+              0.977842,
+              0.979311
+            ],
+            "box_format": "normalized_xyxy",
+            "meaning": "Actual detector proposal; condition classified separately in two-stage mode. Not lesion segmentation."
+          }
+        ],
+        "image_size": {
+          "width": 286,
+          "height": 259
+        },
+        "method": "two-stage",
+        "warning": "Possible leaf condition. Model score is not diagnostic probability or disease severity.",
+        "latency_ms": 404.1
+      }
+    },
+    {
+      "input": "QA_SCREENSHOT_DERIVED_yellow_UNKNOWN_DIAGNOSIS.jpg",
+      "ground_truth": "UNKNOWN; screenshot-derived, not a labeled validation example",
+      "prediction": {
+        "status": "NO_DETECTION",
+        "label": null,
+        "score": null,
+        "quality": {
+          "brightness": 28.1,
+          "contrast": 20.6,
+          "sharpness": 660.8,
+          "foliage_fraction": 0.08,
+          "glare_fraction": 0.0,
+          "method": "unvalidated quality heuristic; not a leaf detector"
+        },
+        "reason": "No supported tomato condition detected above threshold. Try a closer, well-lit single leaf; absence of boxes does not mean healthy.",
+        "model": {
+          "id": "hybrid",
+          "filename": "tomato_detector_9class.pt",
+          "sha256": "ccc05ab88bb550567fb7a7a07c564d37e344e7e69e094da54481ea47c0f134b3",
+          "classes": [
+            "Bacterial Spot",
+            "Early Blight",
+            "Healthy",
+            "Late Blight",
+            "Yellow Leaf Curl Virus"
+          ],
+          "raw_classes": [
+            "Tomato Early blight leaf",
+            "Tomato Septoria leaf spot",
+            "Tomato leaf",
+            "Tomato leaf bacterial spot",
+            "Tomato leaf late blight",
+            "Tomato leaf mosaic virus",
+            "Tomato leaf yellow virus",
+            "Tomato mold leaf",
+            "Tomato two spotted spider mites leaf"
+          ],
+          "task": "two-stage",
+          "device": "cpu",
+          "input_size": 640,
+          "provenance": "Actual 9-class YOLO detector boxes + preserved user 5-class YOLO classifier; experimental two-stage profile",
+          "classifier_sha256": "d3e816f6d02cd74f3d4b0fd6d756b8bcd93a7efefd9c41920f30a02af3bf3007",
+          "classifier_file": "tomato_best.pt"
+        },
+        "top_classes": [],
+        "detections": [],
+        "image_size": {
+          "width": 206,
+          "height": 276
+        },
+        "method": "two-stage",
+        "warning": "Possible leaf condition. Model score is not diagnostic probability or disease severity.",
+        "latency_ms": 896.9
+      }
+    },
+    {
+      "input": "QA_SCREENSHOT_DERIVED_green_UNKNOWN_DIAGNOSIS.jpg",
+      "ground_truth": "UNKNOWN; screenshot-derived, not a labeled validation example",
+      "prediction": {
+        "status": "REVIEW",
+        "label": "Early Blight",
+        "score": 0.99991,
+        "quality": {
+          "brightness": 125.2,
+          "contrast": 29.8,
+          "sharpness": 274.6,
+          "foliage_fraction": 0.645,
+          "glare_fraction": 0.0,
+          "method": "unvalidated quality heuristic; not a leaf detector"
+        },
+        "reason": "7 YOLO region(s). Models disagree; compare symptoms before accepting the class.",
+        "model": {
+          "id": "hybrid",
+          "filename": "tomato_detector_9class.pt",
+          "sha256": "ccc05ab88bb550567fb7a7a07c564d37e344e7e69e094da54481ea47c0f134b3",
+          "classes": [
+            "Bacterial Spot",
+            "Early Blight",
+            "Healthy",
+            "Late Blight",
+            "Yellow Leaf Curl Virus"
+          ],
+          "raw_classes": [
+            "Tomato Early blight leaf",
+            "Tomato Septoria leaf spot",
+            "Tomato leaf",
+            "Tomato leaf bacterial spot",
+            "Tomato leaf late blight",
+            "Tomato leaf mosaic virus",
+            "Tomato leaf yellow virus",
+            "Tomato mold leaf",
+            "Tomato two spotted spider mites leaf"
+          ],
+          "task": "two-stage",
+          "device": "cpu",
+          "input_size": 640,
+          "provenance": "Actual 9-class YOLO detector boxes + preserved user 5-class YOLO classifier; experimental two-stage profile",
+          "classifier_sha256": "d3e816f6d02cd74f3d4b0fd6d756b8bcd93a7efefd9c41920f30a02af3bf3007",
+          "classifier_file": "tomato_best.pt"
+        },
+        "top_classes": [
+          {
+            "label": "Early Blight",
+            "score": 0.99991
+          }
+        ],
+        "detections": [
+          {
+            "id": 7,
+            "class_id": 3,
+            "label": "Early Blight",
+            "raw_label": "Tomato leaf bacterial spot",
+            "score": 0.99991,
+            "localization_score": 0.51199,
+            "detector_label": "Bacterial Spot",
+            "classifier_top_classes": [
+              {
+                "label": "Early Blight",
+                "score": 0.99991
+              },
+              {
+                "label": "Yellow Leaf Curl Virus",
+                "score": 9e-05
+              },
+              {
+                "label": "Late Blight",
+                "score": 0.0
+              }
+            ],
+            "classification_input": "detected region",
+            "review_required": true,
+            "models_disagree": true,
+            "box": [
+              0.341696,
+              0.529722,
+              0.852429,
+              0.740661
+            ],
+            "box_format": "normalized_xyxy",
+            "meaning": "Actual detector proposal; condition classified separately in two-stage mode. Not lesion segmentation."
+          },
+          {
+            "id": 3,
+            "class_id": 2,
+            "label": "Early Blight",
+            "raw_label": "Tomato leaf",
+            "score": 0.99551,
+            "localization_score": 0.67104,
+            "detector_label": "Healthy",
+            "classifier_top_classes": [
+              {
+                "label": "Early Blight",
+                "score": 0.99551
+              },
+              {
+                "label": "Yellow Leaf Curl Virus",
+                "score": 0.00425
+              },
+              {
+                "label": "Late Blight",
+                "score": 0.00024
+              }
+            ],
+            "classification_input": "detected region",
+            "review_required": true,
+            "models_disagree": true,
+            "box": [
+              0.212102,
+              0.69836,
+              0.509307,
+              1.0
+            ],
+            "box_format": "normalized_xyxy",
+            "meaning": "Actual detector proposal; condition classified separately in two-stage mode. Not lesion segmentation."
+          },
+          {
+            "id": 2,
+            "class_id": 2,
+            "label": "Early Blight",
+            "raw_label": "Tomato leaf",
+            "score": 0.9932,
+            "localization_score": 0.67481,
+            "detector_label": "Healthy",
+            "classifier_top_classes": [
+              {
+                "label": "Early Blight",
+                "score": 0.9932
+              },
+              {
+                "label": "Yellow Leaf Curl Virus",
+                "score": 0.00675
+              },
+              {
+                "label": "Late Blight",
+                "score": 5e-05
+              }
+            ],
+            "classification_input": "detected region",
+            "review_required": true,
+            "models_disagree": true,
+            "box": [
+              0.0,
+              0.486318,
+              0.279895,
+              0.669346
+            ],
+            "box_format": "normalized_xyxy",
+            "meaning": "Actual detector proposal; condition classified separately in two-stage mode. Not lesion segmentation."
+          },
+          {
+            "id": 6,
+            "class_id": 3,
+            "label": "Early Blight",
+            "raw_label": "Tomato leaf bacterial spot",
+            "score": 0.83772,
+            "localization_score": 0.52523,
+            "detector_label": "Bacterial Spot",
+            "classifier_top_classes": [
+              {
+                "label": "Early Blight",
+                "score": 0.83772
+              },
+              {
+                "label": "Yellow Leaf Curl Virus",
+                "score": 0.15946
+              },
+              {
+                "label": "Late Blight",
+                "score": 0.00281
+              }
+            ],
+            "classification_input": "detected region",
+            "review_required": true,
+            "models_disagree": true,
+            "box": [
+              0.062584,
+              0.321909,
+              0.332678,
+              0.464702
+            ],
+            "box_format": "normalized_xyxy",
+            "meaning": "Actual detector proposal; condition classified separately in two-stage mode. Not lesion segmentation."
+          },
+          {
+            "id": 1,
+            "class_id": 4,
+            "label": "Early Blight",
+            "raw_label": "Tomato leaf late blight",
+            "score": 0.76534,
+            "localization_score": 0.85358,
+            "detector_label": "Late Blight",
+            "classifier_top_classes": [
+              {
+                "label": "Early Blight",
+                "score": 0.76534
+              },
+              {
+                "label": "Yellow Leaf Curl Virus",
+                "score": 0.23412
+              },
+              {
+                "label": "Late Blight",
+                "score": 0.00053
+              }
+            ],
+            "classification_input": "detected region",
+            "review_required": true,
+            "models_disagree": true,
+            "box": [
+              0.488293,
+              0.227014,
+              0.916966,
+              0.406321
+            ],
+            "box_format": "normalized_xyxy",
+            "meaning": "Actual detector proposal; condition classified separately in two-stage mode. Not lesion segmentation."
+          },
+          {
+            "id": 5,
+            "class_id": 4,
+            "label": "Uncertain condition",
+            "raw_label": "Tomato leaf late blight",
+            "score": 0.61867,
+            "localization_score": 0.55583,
+            "detector_label": "Late Blight",
+            "classifier_top_classes": [
+              {
+                "label": "Yellow Leaf Curl Virus",
+                "score": 0.61867
+              },
+              {
+                "label": "Early Blight",
+                "score": 0.37497
+              },
+              {
+                "label": "Late Blight",
+                "score": 0.00635
+              }
+            ],
+            "classification_input": "detected region",
+            "review_required": true,
+            "models_disagree": false,
+            "box": [
+              0.793088,
+              0.126145,
+              0.961383,
+              0.297105
+            ],
+            "box_format": "normalized_xyxy",
+            "meaning": "Actual detector proposal; condition classified separately in two-stage mode. Not lesion segmentation."
+          },
+          {
+            "id": 4,
+            "class_id": 4,
+            "label": "Uncertain condition",
+            "raw_label": "Tomato leaf late blight",
+            "score": 0.50494,
+            "localization_score": 0.59088,
+            "detector_label": "Late Blight",
+            "classifier_top_classes": [
+              {
+                "label": "Early Blight",
+                "score": 0.50494
+              },
+              {
+                "label": "Yellow Leaf Curl Virus",
+                "score": 0.49421
+              },
+              {
+                "label": "Late Blight",
+                "score": 0.00085
+              }
+            ],
+            "classification_input": "detected region",
+            "review_required": true,
+            "models_disagree": false,
+            "box": [
+              0.37845,
+              0.38542,
+              0.631012,
+              0.511277
+            ],
+            "box_format": "normalized_xyxy",
+            "meaning": "Actual detector proposal; condition classified separately in two-stage mode. Not lesion segmentation."
+          }
+        ],
+        "image_size": {
+          "width": 206,
+          "height": 276
+        },
+        "method": "two-stage",
+        "warning": "Possible leaf condition. Model score is not diagnostic probability or disease severity.",
+        "latency_ms": 237.4
+      }
+    }
+  ]
+}

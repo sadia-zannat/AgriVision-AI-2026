@@ -1,0 +1,11 @@
+{
+  "model": "NarimanOsman2025/tomato-disease-detector-yolov8n",
+  "revision": "1e57e122a6aaa2aba5532e72b10f5cc78b49219d",
+  "url": "https://huggingface.co/NarimanOsman2025/tomato-disease-detector-yolov8n/resolve/1e57e122a6aaa2aba5532e72b10f5cc78b49219d/best.pt",
+  "bytes": 6516970,
+  "sha256": "ccc05ab88bb550567fb7a7a07c564d37e344e7e69e094da54481ea47c0f134b3",
+  "upstream_license": "CC-BY-4.0 per model card",
+  "task": "detect",
+  "retrained_by_us": false,
+  "original_weights_preserved": true
+}

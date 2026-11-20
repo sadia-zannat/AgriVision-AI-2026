@@ -1,0 +1,438 @@
+{
+  "version": "2.0.0",
+  "created_utc": "2026-11-13T21:36:39.428051+00:00",
+  "application": "AgriVision AI — Plant Doctor",
+  "python_tests_passed": 66,
+  "javascript_tests_passed": 5,
+  "browser_workflows_passed": 14,
+  "retrained": false,
+  "physical_usb_tested": false,
+  "cuda_tested": false,
+  "customer_api_credentials_tested": false,
+  "models": {
+    "models/tomato_best.pt": "d3e816f6d02cd74f3d4b0fd6d756b8bcd93a7efefd9c41920f30a02af3bf3007",
+    "models/tomato_detector_9class.pt": "ccc05ab88bb550567fb7a7a07c564d37e344e7e69e094da54481ea47c0f134b3"
+  },
+  "files": [
+    {
+      "path": ".env.example",
+      "bytes": 703,
+      "sha256": "8bbeb270310352ac01af7383ca7cbe72c6a0fe1a13a9d386403ae64f6d7d0f44"
+    },
+    {
+      "path": ".gitignore",
+      "bytes": 176,
+      "sha256": "4c1e08744dee49d0ea7b0fbb96575cb0967fb3b3e188967a33c20e352a76e046"
+    },
+    {
+      "path": ".vscode/launch.json",
+      "bytes": 269,
+      "sha256": "7c3448cc4397ab844c2b2c195da85f15e652665e10976003297309035f83a672"
+    },
+    {
+      "path": ".vscode/settings.json",
+      "bytes": 148,
+      "sha256": "931ef919e70e949b8022f8e4966a671d4e798ccc2c683d5f4c10698e836356fb"
+    },
+    {
+      "path": ".vscode/tasks.json",
+      "bytes": 516,
+      "sha256": "e65398e6c8e97ad8068b6fc49afc0e6466cb9cbd88182fec87d1b2e5843dbc33"
+    },
+    {
+      "path": "00_START_HERE_BN.md",
+      "bytes": 1880,
+      "sha256": "2b700e6efc3a69cbbe1c30c16adc9fe145cf7baf9d534ced1854915494f694ce"
+    },
+    {
+      "path": "ARCHITECTURE.md",
+      "bytes": 6505,
+      "sha256": "b477103321a359c1a04132c1ae021d97d898234b021ea2b4e56b47088a824aea"
+    },
+    {
+      "path": "BUG_FIX_MATRIX.md",
+      "bytes": 4017,
+      "sha256": "41710ba3eeb83a597befcd0f3e69368199741cefcfe24849f63a7efad41ab1b2"
+    },
+    {
+      "path": "DATASET_PROVENANCE.md",
+      "bytes": 5594,
+      "sha256": "692323fb9a08eb917d355d5726da5f3fc3395b63c2994fe0cee717657fdfce1c"
+    },
+    {
+      "path": "FILE_TREE.txt",
+      "bytes": 2543,
+      "sha256": "3ed5070a96242bd3f5fa41ce7169bb5b3a9162c9c893595f30c2b6de797ba34b"
+    },
+    {
+      "path": "JUDGES_DEMO_BN.md",
+      "bytes": 2635,
+      "sha256": "2beb5b6d95df001ec53f937068501ca567805e9aeef0a9994ab1a35ef5f2a135"
+    },
+    {
+      "path": "MODEL_CARD.md",
+      "bytes": 5055,
+      "sha256": "29149391168d6b012091eacf260a74b16936e54b5933c80cd822c248bd73015f"
+    },
+    {
+      "path": "QA_REPORT.md",
+      "bytes": 8253,
+      "sha256": "6fffd067563a1758d62e6b87bc3c51056f1064d6fae81ae7b96d799be9d0d3d9"
+    },
+    {
+      "path": "README_BN.md",
+      "bytes": 19644,
+      "sha256": "acc721890ec66b72b5af57a0dba8b37d9b0f5630aee1c4503a2d67ace86d70f5"
+    },
+    {
+      "path": "RUN_AGRIVISION_WINDOWS.bat",
+      "bytes": 350,
+      "sha256": "74113ae03481b28cd4c5987810a80380b2388cca4f55eac65513d13390e7fb5a"
+    },
+    {
+      "path": "SETUP_WINDOWS.bat",
+      "bytes": 1090,
+      "sha256": "20fbe41db9eabb4ab40f21a456768084572fdd4dcde68ba3a62b5e54a7501194"
+    },
+    {
+      "path": "THIRD_PARTY_NOTICES.md",
+      "bytes": 2867,
+      "sha256": "e717354df1f038af16a7d44ddbeb723153c47d6998dfde0f651efdcf68f00676"
+    },
+    {
+      "path": "TRAIN_10CLASS_OPTIONAL.bat",
+      "bytes": 743,
+      "sha256": "c8d7498054a6e3915b0ff8e6c8eef0375427fa72fb992757dec379668f688d97"
+    },
+    {
+      "path": "USER_ONLY_ACTIONS_BN.md",
+      "bytes": 2322,
+      "sha256": "c0642a2f6a79de31b2ae05528dd237b28794c32e811fce4982dd205c4bfd0ea7"
+    },
+    {
+      "path": "backend/__init__.py",
+      "bytes": 39,
+      "sha256": "d541341f0d70f6af0a33bb83a232556ea6aebd65fefac01e4780caef00e2138b"
+    },
+    {
+      "path": "backend/app.py",
+      "bytes": 19500,
+      "sha256": "973ab0d76967acb208b79a2c4edea3cb98dddf2823006be890bdde021e3ff6c0"
+    },
+    {
+      "path": "backend/chat.py",
+      "bytes": 3925,
+      "sha256": "3a8a88832faebeb382db69da3cb2477a52581494e8476343623aad02625a6189"
+    },
+    {
+      "path": "backend/config.py",
+      "bytes": 1156,
+      "sha256": "07dac95a65e702f627acc05d906be6d6bac6d3f3582ca39f5f68108d615913a0"
+    },
+    {
+      "path": "backend/knowledge.py",
+      "bytes": 45486,
+      "sha256": "d0136fb4598c896690d9bc56521aae28874601c2eb9127588edb943e729b404a"
+    },
+    {
+      "path": "backend/providers.py",
+      "bytes": 7091,
+      "sha256": "6d2b0fe125f6f98042b8435608a1358702e0e9b46cdea579e334b27d3a5c8cbc"
+    },
+    {
+      "path": "backend/storage.py",
+      "bytes": 5387,
+      "sha256": "72f222f46fe91a9d374b7afa69493859359ad69c4a47c8dccf851f651000bb53"
+    },
+    {
+      "path": "backend/telemetry.py",
+      "bytes": 3131,
+      "sha256": "4fad095919ef5548f95658f369f6ac8e74063f8a7bbed0b22cc4764f15516aaf"
+    },
+    {
+      "path": "backend/uploads.py",
+      "bytes": 3372,
+      "sha256": "8238658990845c8eeb924db588453fee2ef2b6ed469a963aac7cd829bd2b038e"
+    },
+    {
+      "path": "backend/vision.py",
+      "bytes": 12749,
+      "sha256": "85aa8807e4b451900201d859e14b5584183af5395fd5912f4a96548d2931b4e3"
+    },
+    {
+      "path": "data/knowledge/IOWA_TOMATO_GUIDE.pdf.pages.json",
+      "bytes": 29702,
+      "sha256": "36930502376b316fb3f326531131998ad832904c07c871d006b0cb85e60e69ab"
+    },
+    {
+      "path": "data/knowledge/KSTATE_TOMATO_DISEASE_GUIDE.pdf.pages.json",
+      "bytes": 20279,
+      "sha256": "d77d325664b16bf9e1d3371da4aa9d5393b6709fb918a8eb1dc67c0a3f01ea89"
+    },
+    {
+      "path": "data/knowledge/tomato_guides.json",
+      "bytes": 82970,
+      "sha256": "fc6c0e9519cb9237c8fc867fea7c08d762f472c4158f1b18d837af8b8c1deded"
+    },
+    {
+      "path": "docs/QA_SCREENSHOT_DERIVED_green_UNKNOWN_DIAGNOSIS_annotations.jpg",
+      "bytes": 31682,
+      "sha256": "33791d38273b8d418a7c881e054a6bdd42d1b3ab48aab6a1672aee4b49d33ca3"
+    },
+    {
+      "path": "docs/QA_SCREENSHOT_DERIVED_mixed_UNKNOWN_DIAGNOSIS_annotations.jpg",
+      "bytes": 27127,
+      "sha256": "9b26e724f81bca97e85b587a0fdef5dc2dd58294ddf6a5ed23bd986f3dae1032"
+    },
+    {
+      "path": "docs/QA_SCREENSHOT_DERIVED_yellow_UNKNOWN_DIAGNOSIS_annotations.jpg",
+      "bytes": 7915,
+      "sha256": "68e03cef319c3120c47bba056d5cd28b75ff8a8c2222d7666730e507662178f2"
+    },
+    {
+      "path": "docs/QA_TEST_KSTATE_EARLY_BLIGHT_NOT_LIVE_annotations.jpg",
+      "bytes": 26067,
+      "sha256": "9649310ce32061292ac8cb4c474a2d038a5e027fc41b02739aaea819d50fd041"
+    },
+    {
+      "path": "docs/RELEASE_VERIFICATION.md",
+      "bytes": 476,
+      "sha256": "ce56707d5406a049e66db802727eb5fffff6961627b22f659f6d8cc20a199cf0"
+    },
+    {
+      "path": "docs/TESTED_ENVIRONMENT.json",
+      "bytes": 513,
+      "sha256": "792d6ef8fb0957f2b599d909aaf22700590ec6cba64c7cb4d3bc9115ce47ce4c"
+    },
+    {
+      "path": "docs/qa-browser-results.json",
+      "bytes": 2247,
+      "sha256": "cf3d3c9a1bbcf297b00ab82184d59085ae18b666e4f07fa823f4b5a40d4302b4"
+    },
+    {
+      "path": "docs/qa-model-smoke.json",
+      "bytes": 17476,
+      "sha256": "fa217ec616f35c14d8cf530caa610007241fce0faa1f77527b1434efccd6d5fa"
+    },
+    {
+      "path": "docs/qa-node-output.txt",
+      "bytes": 538,
+      "sha256": "0ac2dd00722523fbbb17b2583ac8689448a635ae932597439e5879a57b084702"
+    },
+    {
+      "path": "docs/qa-python-output.txt",
+      "bytes": 841,
+      "sha256": "735d7782efdb9a23820cfe255ef252fef374a0acebbd4ebb68d84a665fbe0daf"
+    },
+    {
+      "path": "docs/qa-python-results.xml",
+      "bytes": 10319,
+      "sha256": "160b278e96f0acb0e64ca89437194f21535e13c1352dae634e767b04a8ff0546"
+    },
+    {
+      "path": "docs/qa-setup-diagnostics.txt",
+      "bytes": 1327,
+      "sha256": "a087a6c6529fb6f18fc1d2e4acc4b852035b1e7380e13a0ad6739c878a4c34dc"
+    },
+    {
+      "path": "docs/screenshots/01_dashboard_1366.png",
+      "bytes": 357346,
+      "sha256": "394841d11fffe1c89207d9be563bdb1e90d1b04439af3d6bc5630a4960f728d8"
+    },
+    {
+      "path": "docs/screenshots/02_photo_evidence_chat_1366.png",
+      "bytes": 518373,
+      "sha256": "01eaaeb8e1ad9ad45c02591af661ded461ea7e4ba981d1258643fd05b24ca3e8"
+    },
+    {
+      "path": "docs/screenshots/03_attachment_preview.png",
+      "bytes": 478591,
+      "sha256": "720b37e5279e1df07877d90a86569fcaf95984ec7855c03c4db938f8236feb7a"
+    },
+    {
+      "path": "docs/screenshots/04_dashboard_1920.png",
+      "bytes": 920488,
+      "sha256": "92e1b8089cdf4b61a36961fc03bf400d70cdb41787c6b11422d1fc2dea29a432"
+    },
+    {
+      "path": "docs/screenshots/05_mobile_390.png",
+      "bytes": 417098,
+      "sha256": "9dce99d254afc52e41f6ec7afcf4054d00cb8b0be137e22c83d286bdc2e43952"
+    },
+    {
+      "path": "docs/screenshots/README.md",
+      "bytes": 458,
+      "sha256": "739c7a9576cca034be2c9235590c9c0ac67cdf165c0173a12d360fef8f683c49"
+    },
+    {
+      "path": "frontend/static/app.js",
+      "bytes": 46495,
+      "sha256": "ff060f9fd7f727ed98924c1aaee566d69c0f82f406de23824623076c42dc871a"
+    },
+    {
+      "path": "frontend/static/assets/agrivision-mark.png",
+      "bytes": 48285,
+      "sha256": "ecf32692c21a365cb89a25570a3cdaf86434bf9069d39d42533b8836bec8e014"
+    },
+    {
+      "path": "frontend/static/assets/leaf.svg",
+      "bytes": 262,
+      "sha256": "738b11ae153ad7660748347b70f793129f88bf9290a4aa90c030d2db18843e76"
+    },
+    {
+      "path": "frontend/static/assets/plant-doctor-bot.svg",
+      "bytes": 856,
+      "sha256": "df5a26af320986afc16f4cec422a0a765c74fbab7767fe266b0fe69798439a28"
+    },
+    {
+      "path": "frontend/static/assets/recorded_track_example.csv",
+      "bytes": 83,
+      "sha256": "593f95349edae4c9657ead39b12d6c9693977fa449bb70dd7a0ae396b4d6a8e7"
+    },
+    {
+      "path": "frontend/static/camera.js",
+      "bytes": 2745,
+      "sha256": "3d50a43031077eb124d318c140760578aa06903faa41751721d414efbea0b8e3"
+    },
+    {
+      "path": "frontend/static/core.js",
+      "bytes": 1841,
+      "sha256": "e5581cc9af050c507fe84b88bfe39a33f72c8e4c2fc5beb093ba3742f67faea0"
+    },
+    {
+      "path": "frontend/static/index.html",
+      "bytes": 22052,
+      "sha256": "02a0f4036ca1e6d552c85c63b6411ba7a41bce79e89c4aa160661500c237e268"
+    },
+    {
+      "path": "frontend/static/style.css",
+      "bytes": 28713,
+      "sha256": "567e3e604769ac71711a66371b37a99cee74feebf492ff7becbbd2f2a36b498a"
+    },
+    {
+      "path": "models/detector_provenance.json",
+      "bytes": 500,
+      "sha256": "d6a25e810168766a46e8506cb7c9c5062f4c195a0bb36601a1c3eabef49cf87a"
+    },
+    {
+      "path": "models/tomato_best.pt",
+      "bytes": 3194562,
+      "sha256": "d3e816f6d02cd74f3d4b0fd6d756b8bcd93a7efefd9c41920f30a02af3bf3007"
+    },
+    {
+      "path": "models/tomato_detector_9class.pt",
+      "bytes": 6516970,
+      "sha256": "ccc05ab88bb550567fb7a7a07c564d37e344e7e69e094da54481ea47c0f134b3"
+    },
+    {
+      "path": "references/APPROVED_DASHBOARD.png",
+      "bytes": 2832266,
+      "sha256": "a43db74710f62d6ed6bda1b35e212312d46b00c001dc2538377d8009fe2c0d76"
+    },
+    {
+      "path": "references/DETECTOR_MODEL_CARD_UPSTREAM.md",
+      "bytes": 2719,
+      "sha256": "fe257ca1e4b08215eda84063a904838e9e243b20285d5e341e5212d867c3ee9a"
+    },
+    {
+      "path": "references/ENGINEERING_MASTER_PROMPT.md",
+      "bytes": 15586,
+      "sha256": "bb9a573754a6b2d434948d13f082c745e7b51876a31cb2950565e168704b0154"
+    },
+    {
+      "path": "references/IOWA_TOMATO_GUIDE.pdf",
+      "bytes": 1096887,
+      "sha256": "7d6ddac9018055edfad9b600e1c293addac42a9fd77e77a68e850b8b1dcc77d0"
+    },
+    {
+      "path": "references/KSTATE_TOMATO_DISEASE_GUIDE.pdf",
+      "bytes": 444704,
+      "sha256": "ede7018068c785b19c03b56e1acaf556deddc67f5db502e7f560b77af765f456"
+    },
+    {
+      "path": "requirements-dev.txt",
+      "bytes": 54,
+      "sha256": "abe81bfd7bcdc24056d68c89b4cc1b95fe9d6d0b7f2b6b93fb0b75ef6699ff1d"
+    },
+    {
+      "path": "requirements-training.txt",
+      "bytes": 79,
+      "sha256": "fe7d09766de6996227f50fda9a7e091d314b4094b12214295827137dad27e0f4"
+    },
+    {
+      "path": "requirements.txt",
+      "bytes": 204,
+      "sha256": "d6239577fe250ac3e80d093a1b4b2f714607c6b63d2431e16eb03f35d8652f47"
+    },
+    {
+      "path": "scripts/doctor.py",
+      "bytes": 1074,
+      "sha256": "64473bcfd9e67033301a47ca858fdacf2983a5447eb33ef5a1cfabaf3edbe70b"
+    },
+    {
+      "path": "scripts/prepare_tomato_10class.py",
+      "bytes": 8123,
+      "sha256": "98992243d9f1b01b80a56129dff40da07ad4fd11998f2e1be0a0f4c469de5480"
+    },
+    {
+      "path": "scripts/run_local.py",
+      "bytes": 1067,
+      "sha256": "45f7003b3f17b94260079765a78c08ea770b3438ec23d72de46aa790bc8a1ec8"
+    },
+    {
+      "path": "scripts/train_tomato_10class.py",
+      "bytes": 4778,
+      "sha256": "b1d5ecc95885aeb84484b2b8c5779da9e21c7899170d0a73867bad8cf2aefd71"
+    },
+    {
+      "path": "tests/assets/QA_SCREENSHOT_DERIVED_green_UNKNOWN_DIAGNOSIS.jpg",
+      "bytes": 11993,
+      "sha256": "0de265aa68bdd329ad2bbe02c15144bb624e1e8ffc577ef9ee438fe6801d9110"
+    },
+    {
+      "path": "tests/assets/QA_SCREENSHOT_DERIVED_mixed_UNKNOWN_DIAGNOSIS.jpg",
+      "bytes": 14518,
+      "sha256": "82fc9a1e05acabcd365b8dba047d663881f47fca65172b24b2c501b309f742b6"
+    },
+    {
+      "path": "tests/assets/QA_SCREENSHOT_DERIVED_yellow_UNKNOWN_DIAGNOSIS.jpg",
+      "bytes": 5127,
+      "sha256": "6f02a6696e2cf5bdf042bf752b1cdd747b98daeefa4796c3d6422e7dfd1ea249"
+    },
+    {
+      "path": "tests/assets/QA_TEST_KSTATE_EARLY_BLIGHT_NOT_LIVE.jpg",
+      "bytes": 11367,
+      "sha256": "321b2c62e827dff36764438a1d3f4a123df0e17e15bf85cc9a96cc69479c3b37"
+    },
+    {
+      "path": "tests/assets/README.md",
+      "bytes": 586,
+      "sha256": "2d005b7b44fd35a07537ae84b9cd53a5bedee963e3de95adab0cf817936a383a"
+    },
+    {
+      "path": "tests/browser_qa.py",
+      "bytes": 15523,
+      "sha256": "e6f657ba89be9990bff824702795e5e76d3b3228d0893f86dacbb0ed4d684234"
+    },
+    {
+      "path": "tests/conftest.py",
+      "bytes": 684,
+      "sha256": "7c67fcb5e5b4ebbb44ca682ecd4ef386d619fa00244896e201ef00971701d8ad"
+    },
+    {
+      "path": "tests/test_frontend.cjs",
+      "bytes": 2590,
+      "sha256": "4cb8a9542434acbe4da7848d108aee53a29e921b346663fb4cc180f3ddb19ca4"
+    },
+    {
+      "path": "tests/test_integration.py",
+      "bytes": 16440,
+      "sha256": "9faa8287c24783b68e2e7a1ec968425da573140e7bb49c7b9aa528d7964b46d1"
+    },
+    {
+      "path": "tests/test_training_helpers.py",
+      "bytes": 2271,
+      "sha256": "e16aeb66370c18484dff0c3ef2ef92945bd8bdafc7a0b70a14ecf49d2fa2a91a"
+    }
+  ]
+}
